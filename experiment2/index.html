@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore</title>
+
+    <!-- Bootstrap CSS -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                TechStore
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Product Section -->
+
+    <div class="container mt-5">
+
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <div class="card">
+
+                    <img src="data:image/webp;base64,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"
+                         class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Laptop
+                        </h5>
+
+                        <p class="card-text">
+                            High performance laptop.
+                        </p>
+
+                        <h6>
+                            ₹55,000
+
+                            <span class="badge bg-success">
+                                New
+                            </span>
+
+                        </h6>
+
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal">
+
+                            View Details
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 2 -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <div class="card">
+
+                    <img src="https://th.bing.com/th/id/OIP.aW2O2gG5ywgF_fRZxaKevgHaHa?w=193&h=193&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                         class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Mobile
+                        </h5>
+
+                        <p class="card-text">
+                            Latest smartphone model.
+                        </p>
+
+                        <h6>
+                            ₹25,000
+
+                            <span class="badge bg-danger">
+                                Sale
+                            </span>
+
+                        </h6>
+
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal">
+
+                            View Details
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Card 3 -->
+
+            <div class="col-sm-12 col-md-6 col-lg-4">
+
+                <div class="card">
+
+                    <img src="https://th.bing.com/th/id/OIP.67yrsv1PsBkez7M2j1FMbwHaHa?w=195&h=195&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                         class="card-img-top">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title">
+                            Headphones
+                        </h5>
+
+                        <p class="card-text">
+                            Noise cancelling headphones.
+                        </p>
+
+                        <h6>
+                            ₹5,000
+
+                            <span class="badge bg-warning text-dark">
+                                New
+                            </span>
+
+                        </h6>
+
+                        <button class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#productModal">
+
+                            View Details
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="productModal">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">
+                        Product Details
+                    </h5>
+
+                    <button class="btn-close"
+                            data-bs-dismiss="modal">
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <p>
+                        This product has excellent quality and features.
+                    </p>
+
+                </div>
+
+                <div class="modal-footer">
+
+                    <button class="btn btn-secondary"
+                            data-bs-dismiss="modal">
+
+                        Close
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            © 2026 TechStore | All Rights Reserved
+        </p>
+
+    </footer>
+
+    <!-- Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
